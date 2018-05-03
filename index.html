@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Hangman</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link 
+			href="assets/css/reset.css"
+			rel="stylesheet" 
+			type="text/css" 
+			>
+		<link 
+			href="assets/css/style.css"
+			rel="stylesheet" 
+			type="text/css" 
+			>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      </script>
+	</head>
+
+	<body>
+
+		<div id="game-container" class="game-container">
+			<div class="header-container">
+				Quiz Game
+			</div>
+			
+			<!-- Start screen Divs -->
+			<div id="start-screen" class="">
+				<div id="start-content"><img src="assets/images/start-screen.gif" id="start-image" /></div>
+				<div id="start-button">PLAY</div>
+			</div>
+
+			<!-- Question Game Divs -->
+			<div id="main-game" class="hide">	
+				<div class="question-box">
+					<div id="inquiry" class="question-insert">
+					</div>
+					<div id="answer-image" class="question-insert hide"></div>
+				</div>
+				<div id="questionTimer" class="timer">
+					<span>Time Remaining:</span><span id="timer" class="clock"></span>
+				</div>
+				<div id="answerTimer" class="next-question-timer hide">
+					<span>Time until next question:</span><span id="next-question-timer" class="clock"></span>
+				</div>
+				
+				<div id="answers" class="answer-area">
+					<div id="labela">A</div>
+					<div id="labelb">B</div>
+					<div id="labelc">C</div>
+					<div id="labeld">D</div>
+					<div id="answera" class="guess" data-label="labela">
+					</div>
+					<div id="answerb" class="guess" data-label="labelb">
+					</div>
+					<div id="answerc" class="guess" data-label="labelc">
+					</div>
+					<div id="answerd" class="guess" data-label="labeld">
+					</div>
+				</div>
+			</div>
+
+			<!-- Game Summary Divs -->
+			<div id="summary-screen" class="hide">
+				<div id="summary-content"><img src="assets/images/summary-screen.gif" id="summary-image" /></div>
+				<div id="summary-data">
+					
+				</div>
+				<div id="s-button">PLAY</div>
+			</div>
+			
+		</div>
+
+		<script src="assets/javascript/game.js" type="text/javascript"> 
+    	</script>
+	</body>
+
+</html>
